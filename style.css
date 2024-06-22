@@ -1,0 +1,151 @@
+body {
+  font-family: Arial;
+}
+/* the main container of all html elemens and cards */
+.all {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* style in hole container of the tabs */
+.wrapper {
+  /* height: 100vh; */
+  width: max-content;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 10px rgb(156, 151, 151);
+  border-radius: 5px;
+}
+.search-wrapper {
+  box-shadow: 1px 1px 5px 1px rgb(156, 151, 151);
+  border-radius: 5px;
+}
+.search-wrapper h4 {
+  color: white;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    to bottom,
+    rgba(75, 161, 255, 1) 0%,
+    rgba(57, 156, 245, 1) 43%,
+    rgba(82, 82, 255, 1) 100%
+  );
+  padding: 8px;
+  border-radius: 4px;
+}
+.search-wrapper .search-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 15px 15px 0px;
+}
+
+.search-wrapper .search-container select {
+  padding: 7px 18px;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+/* .first-option :hover {
+  transform: scale(2);
+} */
+/* the hole tabs container */
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  background-color: #ffff;
+  display: inline-block;
+  border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  background-color: inherit;
+  color: #038eeb;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 40px;
+  margin: 0px 20px;
+  transition: 0.3s;
+  font-size: 21px;
+  font-weight: bolder;
+  transition: ease 0.5s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(224, 218, 209, 0.3);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 1px solid #0000be;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin-top: 7px;
+}
+
+.contain-card {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: max-content;
+  gap: 0px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: inline-block;
+  width: 300px;
+  padding: 6px 12px;
+  background: white;
+  box-shadow: 1px 4px 15px 1px rgb(173, 173, 173);
+  border-radius: 5px;
+}
+.tabcontent h4 {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(0, 114, 216, 1) 72%,
+    rgba(0, 0, 255, 1) 100%
+  );
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  /* border-bottom: 1px solid black; */
+}
+
+.tabcontent p {
+  padding: 1px;
+  font-size: 15px;
+}
+
+.tabcontent img {
+  margin-right: 18px;
+  margin-bottom: -3px;
+}
